@@ -1,5 +1,5 @@
 class ATM:
-    def __init__(self, balance=1000):  # ✅ Fixed constructor
+    def __init__(self, balance=1000):  
         self.balance = balance
 
     def check_balance(self):
@@ -16,7 +16,7 @@ class ATM:
         else:
             return "Insufficient funds. Withdrawal failed."
 
-# Create an instance of the ATM
+
 atm = ATM()
 
 while True:
@@ -27,7 +27,7 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    if choice == '1':  # ✅ Fixed indentation
+    if choice == '1':
         print(atm.check_balance())
     elif choice == '2':
         try:
